@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(images/bg-intro-mobile.png);
+  background-color: hsl(0, 100%, 74%);
+  font-size: 16px;
+}
+/******************** Containers ********************/
+.container {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5.2rem auto;
+}
+.wraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/******************* Header, Text section *********************/
+.text-section {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  width: 350px;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+.title-text {
+  width: 310px;
+  margin-bottom: 3.5rem;
+}
+/* *******************Try it free "button" ******************* */
+.try {
+  background-color: hsl(248, 32%, 49%);
+  width: 320px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-radius: 0.6rem;
+  color: #fff;
+  box-shadow: 0px 11px 2px 0px rgb(109, 109, 109);
+}
+.try p {
+  width: 200px;
+  margin-left: 1rem;
+}
+.bold {
+  font-weight: 700;
+}
+
+/* *******************Form Container ******************* */
+.form-section {
+  background-color: #fff;
+  width: 320px;
+  height: fit-content;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 11px 2px 0px rgb(109, 109, 109);
+}
+
+/* *******************Form ******************* */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.lastname,
+.firstname,
+.email,
+.password {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  outline: none;
+  border: 2px solid hsl(0, 0%, 83%);
+  width: 260px;
+  height: 3rem;
+  border-radius: 5px;
+  padding-left: 1rem;
+}
+input:focus {
+  border: 2px solid hsl(0, 0%, 68%);
+  color: rgb(158, 158, 158);
+}
+
+.input_container {
+  position: relative;
+}
+label {
+  font-size: 11px;
+  position: absolute;
+  top: 3.6rem;
+  right: 0.2rem;
+}
+
+/* *******************Claim button ******************* */
+.btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+  width: 280px;
+  height: 3rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 1.2rem;
+  text-transform: uppercase;
+  outline: none;
+}
+.btn:hover {
+  background-color: hsl(154, 58%, 40%);
+  cursor: pointer;
+  box-shadow: 0px 5px 2px 0px rgba(161, 161, 161, 0.418);
+}
+.btn:active {
+  background-color: hsl(154, 58%, 30%);
+  box-shadow: 0px 5px 2px 0px rgba(161, 161, 161, 0.418);
+}
+.btn p {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* *******************Footer Section ******************* */
+footer p {
+  color: hsl(246, 25%, 77%);
+  width: 250px;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.bold-red {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+/* *******************Media Queries******************** */
+@media only screen and (min-width: 1440px) {
+  body {
+    background-image: url(images/bg-intro-desktop.png);
+  }
+  .container {
+    margin-top: 15rem;
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .text-section {
+    margin-top: 5rem;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .title {
+    font-size: 3rem;
+    width: 500px;
+    line-height: 3rem;
+  }
+  .title-text {
+    width: 500px;
+  }
+  .try {
+    width: 500px;
+    height: 40px;
+  }
+  .try p {
+    width: 500px;
+    text-align: center;
+  }
+  .form-section {
+    width: 500px;
+  }
+  .lastname,
+  .firstname,
+  .email,
+  .password {
+    width: 420px;
+  }
+  input:first-of-type {
+    margin-top: 0.5rem;
+  }
+  .btn {
+    width: 440px;
+  }
+  footer p {
+    font-size: 10px;
+    width: 400px;
+  }
+}
